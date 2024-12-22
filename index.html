@@ -1,23 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subhadeep Paul - Startup Founder & Developer</title>
+    <title>My Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#3498db',
-                        secondary: '#2ecc71',
-                    }
-                }
-            }
-        }
-    </script>
     <style>
         .circuit-container {
             background-color: #001a00;
@@ -39,165 +26,72 @@
         }
     </style>
 </head>
-<body class="bg-gray-900 text-white min-h-screen">
-    <div id="circuit-background"></div>
+<body class="h-screen flex flex-col text-white">
+    <!-- Circuit Background -->
+    <div class="circuit-container absolute inset-0 -z-10"></div>
     
-    <header class="fixed w-full bg-gray-800 bg-opacity-90 z-10">
-        <nav class="container mx-auto px-6 py-3">
-            <div class="flex justify-between items-center">
-                <a href="#" class="text-2xl font-bold text-primary">SP</a>
-                <div class="hidden md:flex space-x-4">
-                    <a href="#" class="hover:text-primary transition">Home</a>
-                    <a href="#projects" class="hover:text-primary transition">Projects</a>
-                    <a href="#blog" class="hover:text-primary transition">Blog</a>
-                    <a href="#resume" class="hover:text-primary transition">Resume</a>
-                </div>
-                <button class="md:hidden focus:outline-none">
-                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-                        <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
-            </div>
-        </nav>
+    <!-- Navbar -->
+    <nav class="w-full p-4 bg-black bg-opacity-70 fixed top-0">
+        <ul class="flex justify-center space-x-8 text-green-400">
+            <li><a href="#about" class="hover:text-green-300">About</a></li>
+            <li><a href="#projects" class="hover:text-green-300">Projects</a></li>
+            <li><a href="#contact" class="hover:text-green-300">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="h-screen flex flex-col items-center justify-center">
+        <h1 class="text-5xl font-bold text-green-400 z-10">Welcome to My Portfolio</h1>
+        <p class="mt-4 text-lg text-green-300">Showcasing my skills, projects, and more</p>
     </header>
 
-    <main class="container mx-auto px-6 pt-24 pb-12">
-        <section class="text-center mb-16">
-            <h1 class="text-5xl font-bold mb-4">Subhadeep Paul</h1>
-            <p class="text-xl text-gray-400">Startup Founder | Entrepreneur | Developer</p>
-        </section>
+    <!-- About Section -->
+    <section id="about" class="min-h-screen flex items-center justify-center bg-black bg-opacity-80">
+        <div class="text-center max-w-3xl">
+            <h2 class="text-4xl font-semibold text-green-400">About Me</h2>
+            <p class="mt-4 text-green-300">
+                Hi! I'm Subhadeep Paul, a high school student passionate about web development, programming, and entrepreneurship. 
+                I love creating impactful projects and am eager to learn and grow.
+            </p>
+        </div>
+    </section>
 
-        <section class="grid md:grid-cols-2 gap-12 mb-16">
-            <div class="space-y-4">
-                <h2 class="text-3xl font-bold text-primary">Innovating the Future</h2>
-                <p class="text-gray-300">As a startup founder and developer, I'm passionate about creating solutions that push the boundaries of technology and business. My work spans across various domains, always with an eye on innovation and scalability.</p>
-                <a href="#projects" class="inline-block bg-primary text-white px-6 py-2 rounded hover:bg-opacity-80 transition">Explore My Projects</a>
+    <!-- Projects Section -->
+    <section id="projects" class="min-h-screen flex flex-col items-center justify-center bg-black bg-opacity-90">
+        <h2 class="text-4xl font-semibold text-green-400">Projects</h2>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl">
+            <div class="bg-green-700 bg-opacity-30 p-4 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold text-green-300">Project 1</h3>
+                <p class="mt-2 text-green-200">A brief description of Project 1 goes here.</p>
             </div>
-            <div class="bg-gray-800 rounded-lg p-6 shadow-lg">
-                <h3 class="text-2xl font-bold mb-4">Latest Venture</h3>
-                <p class="text-gray-300 mb-4">TechNova: A revolutionary platform combining AI and blockchain to streamline business processes.</p>
-                <a href="#" class="text-secondary hover:underline">Learn More →</a>
+            <div class="bg-green-700 bg-opacity-30 p-4 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold text-green-300">Project 2</h3>
+                <p class="mt-2 text-green-200">A brief description of Project 2 goes here.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="projects" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6 text-center">Featured Projects</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-                    <img src="https://source.unsplash.com/random/400x200?tech" alt="Project image" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">AI-Driven Analytics</h3>
-                        <p class="text-gray-400 mb-4">Leveraging machine learning for predictive business insights.</p>
-                        <a href="#" class="text-primary hover:underline">View Project →</a>
-                    </div>
-                </div>
-                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-                    <img src="https://source.unsplash.com/random/400x200?blockchain" alt="Project image" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Blockchain Supply Chain</h3>
-                        <p class="text-gray-400 mb-4">Revolutionizing supply chain management with blockchain technology.</p>
-                        <a href="#" class="text-primary hover:underline">View Project →</a>
-                    </div>
-                </div>
-                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-                    <img src="https://source.unsplash.com/random/400x200?app" alt="Project image" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">EcoTrack App</h3>
-                        <p class="text-gray-400 mb-4">Mobile app for tracking and reducing carbon footprint.</p>
-                        <a href="#" class="text-primary hover:underline">View Project →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Contact Section -->
+    <section id="contact" class="min-h-screen flex items-center justify-center bg-black bg-opacity-80">
+        <div class="text-center">
+            <h2 class="text-4xl font-semibold text-green-400">Contact</h2>
+            <p class="mt-4 text-green-300">Feel free to reach out to me!</p>
+            <form class="mt-6">
+                <input type="text" placeholder="Your Name" class="w-80 p-2 rounded-md bg-green-900 text-green-200">
+                <br><br>
+                <input type="email" placeholder="Your Email" class="w-80 p-2 rounded-md bg-green-900 text-green-200">
+                <br><br>
+                <textarea placeholder="Your Message" class="w-80 p-2 rounded-md bg-green-900 text-green-200"></textarea>
+                <br><br>
+                <button type="submit" class="bg-green-500 text-green-900 px-6 py-2 rounded-md hover:bg-green-400">
+                    Send
+                </button>
+            </form>
+        </div>
+    </section>
 
-        <section class="mb-16">
-            <h2 class="text-3xl font-bold mb-6 text-center">Skills & Expertise</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="bg-gray-800 rounded p-4 text-center">
-                    <span class="text-4xl mb-2">💻</span>
-                    <p>Full-Stack Development</p>
-                </div>
-                <div class="bg-gray-800 rounded p-4 text-center">
-                    <span class="text-4xl mb-2">🚀</span>
-                    <p>Startup Strategy</p>
-                </div>
-                <div class="bg-gray-800 rounded p-4 text-center">
-                    <span class="text-4xl mb-2">🤖</span>
-                    <p>AI & Machine Learning</p>
-                </div>
-                <div class="bg-gray-800 rounded p-4 text-center">
-                    <span class="text-4xl mb-2">📊</span>
-                    <p>Data Analysis</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="blog" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6 text-center">Recent Blog Posts</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-                    <img src="https://source.unsplash.com/random/400x200?tech" alt="Blog post image" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">The Future of AI in Startups</h3>
-                        <p class="text-gray-400 mb-4">Exploring how artificial intelligence is shaping the startup ecosystem...</p>
-                        <a href="#" class="text-primary hover:underline">Read More →</a>
-                    </div>
-                </div>
-                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-                    <img src="https://source.unsplash.com/random/400x200?code" alt="Blog post image" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">5 Essential Skills for Tech Entrepreneurs</h3>
-                        <p class="text-gray-400 mb-4">Key competencies that every technology entrepreneur should master...</p>
-                        <a href="#" class="text-primary hover:underline">Read More →</a>
-                    </div>
-                </div>
-                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-                    <img src="https://source.unsplash.com/random/400x200?startup" alt="Blog post image" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Scaling Your Startup: Lessons Learned</h3>
-                        <p class="text-gray-400 mb-4">Insights and strategies for growing your startup in a competitive market...</p>
-                        <a href="#" class="text-primary hover:underline">Read More →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="resume" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6 text-center">Resume Highlights</h2>
-            <div class="bg-gray-800 rounded-lg p-6 shadow-lg">
-                <div class="mb-6">
-                    <h3 class="text-2xl font-bold mb-2">Professional Experience</h3>
-                    <ul class="list-disc list-inside text-gray-300">
-                        <li>Founder & CEO, TechNova (2020 - Present)</li>
-                        <li>Lead Developer, InnovateTech Solutions (2018 - 2020)</li>
-                        <li>Software Engineer, Global Systems Inc. (2015 - 2018)</li>
-                    </ul>
-                </div>
-                <div class="mb-6">
-                    <h3 class="text-2xl font-bold mb-2">Education</h3>
-                    <ul class="list-disc list-inside text-gray-300">
-                        <li>M.S. in Computer Science, Tech University (2015)</li>
-                        <li>B.S. in Software Engineering, Innovation College (2013)</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold mb-2">Certifications</h3>
-                    <ul class="list-disc list-inside text-gray-300">
-                        <li>Certified Scrum Master (CSM)</li>
-                        <li>AWS Certified Solutions Architect</li>
-                        <li>Google Cloud Professional Data Engineer</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-gray-800 text-center py-6">
-        <p>&copy; 2024 Subhadeep Paul. All rights reserved.</p>
-    </footer>
     <script>
-
-    const container = document.querySelector('.circuit-container');
+        const container = document.querySelector('.circuit-container');
         const lineCount = 20;
 
         for (let i = 0; i < lineCount; i++) {
@@ -223,4 +117,4 @@
         }, 200);
     </script>
 </body>
-  </html>
+        </html>
