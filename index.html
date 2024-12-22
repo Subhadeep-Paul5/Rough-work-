@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Startup Founder Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .circuit-container {
             position: absolute;
             inset: 0;
-            background-color: #001a00;
+            background-color: #000;
             background-image: 
-                linear-gradient(rgba(0, 255, 0, 0.1) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0, 255, 0, 0.1) 1px, transparent 1px);
+                linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
             background-size: 20px 20px;
             z-index: 0;
         }
         .circuit-line {
             position: absolute;
-            background-color: #00ff00;
+            background-color: #fff;
             opacity: 0;
             transition: opacity 0.5s;
         }
@@ -28,32 +28,23 @@
         }
     </style>
 </head>
-<body class="text-white">
+<body class="text-white bg-black">
     <!-- Navbar -->
-    <nav class="w-full p-4 bg-black bg-opacity-70 fixed top-0 z-10">
-        <ul class="flex justify-center space-x-8 text-green-400">
-            <li><a href="#about" class="hover:text-green-300">About</a></li>
-            <li><a href="#circuit" class="hover:text-green-300">Circuit</a></li>
-            <li><a href="#contact" class="hover:text-green-300">Contact</a></li>
+    <nav class="w-full p-4 bg-black bg-opacity-80 fixed top-0 z-10">
+        <ul class="flex justify-center space-x-8 text-gray-300">
+            <li><a href="#about" class="hover:text-gray-100">About</a></li>
+            <li><a href="#circuit" class="hover:text-gray-100">Circuit</a></li>
+            <li><a href="#contact" class="hover:text-gray-100">Contact</a></li>
         </ul>
     </nav>
 
     <!-- About Section -->
-    <section id="circuit" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <!-- Circuit Background -->
-        <div class="circuit-container"></div>
-        <div class="z-10 text-center max-w-3xl">
-            <h2 class="text-5xl font-bold text-green-400">Animated Circuit Board</h2>
-            <p class="mt-4 text-lg text-green-300">This section features an animated circuit board background.</p>
-        </div>
-    </section>
-    <section id="about" class="min-h-screen flex items-center justify-center bg-black bg-opacity-80">
-        
+    <section id="about" class="min-h-screen flex items-center justify-center bg-black">
         <div class="text-center max-w-3xl">
-            <h2 class="text-4xl font-semibold text-green-400">About Me</h2>
-            <p class="mt-4 text-green-300">
-                Hi! I'm Subhadeep Paul, a high school student passionate about web development, programming, and entrepreneurship. 
-                I love creating impactful projects and am eager to learn and grow.
+            <h2 class="text-4xl font-semibold text-gray-100">About Me</h2>
+            <p class="mt-4 text-gray-400">
+                Hello! I'm Subhadeep Paul, a high school student and startup founder passionate about building innovative solutions. 
+                My focus lies in entrepreneurship, programming, and creating impactful projects that can make a difference.
             </p>
         </div>
     </section>
@@ -63,25 +54,24 @@
         <!-- Circuit Background -->
         <div class="circuit-container"></div>
         <div class="z-10 text-center max-w-3xl">
-            <h2 class="text-5xl font-bold text-green-400">Animated Circuit Board</h2>
-            <p class="mt-4 text-lg text-green-300">This section features an animated circuit board background.</p>
+            <h2 class="text-5xl font-bold text-white">Innovative Circuitry</h2>
+            <p class="mt-4 text-lg text-gray-300">A representation of innovation, precision, and the startup mindset.</p>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="min-h-screen flex items-center justify-center bg-black bg-opacity-80">
-        
+    <section id="contact" class="min-h-screen flex items-center justify-center bg-black">
         <div class="text-center">
-            <h2 class="text-4xl font-semibold text-green-400">Contact</h2>
-            <p class="mt-4 text-green-300">Feel free to reach out to me!</p>
+            <h2 class="text-4xl font-semibold text-gray-100">Get in Touch</h2>
+            <p class="mt-4 text-gray-400">I’d love to connect! Feel free to reach out for collaborations or inquiries.</p>
             <form class="mt-6">
-                <input type="text" placeholder="Your Name" class="w-80 p-2 rounded-md bg-green-900 text-green-200">
+                <input type="text" placeholder="Your Name" class="w-80 p-2 rounded-md bg-gray-800 text-gray-200">
                 <br><br>
-                <input type="email" placeholder="Your Email" class="w-80 p-2 rounded-md bg-green-900 text-green-200">
+                <input type="email" placeholder="Your Email" class="w-80 p-2 rounded-md bg-gray-800 text-gray-200">
                 <br><br>
-                <textarea placeholder="Your Message" class="w-80 p-2 rounded-md bg-green-900 text-green-200"></textarea>
+                <textarea placeholder="Your Message" class="w-80 p-2 rounded-md bg-gray-800 text-gray-200"></textarea>
                 <br><br>
-                <button type="submit" class="bg-green-500 text-green-900 px-6 py-2 rounded-md hover:bg-green-400">
+                <button type="submit" class="bg-gray-700 text-gray-100 px-6 py-2 rounded-md hover:bg-gray-600">
                     Send
                 </button>
             </form>
