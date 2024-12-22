@@ -8,19 +8,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="Shreya.jpg">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Background circuit animation */
+    /* Circuit Background Container */
     .circuit-container {
-      position: fixed;
+      position: fixed; /* Ensures it sticks to the viewport */
       inset: 0;
       background-color: #000;
       background-image: 
         linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
       background-size: 20px 20px;
-      z-index: -1;
-      overflow: hidden;
+      z-index: -1; /* Keeps it in the background */
     }
 
+    /* Circuit Lines Animation */
     .circuit-line {
       position: absolute;
       background-color: #fff;
@@ -32,7 +32,6 @@
       0%, 100% {
         opacity: 0.1;
       }
-
       50% {
         opacity: 0.5;
       }
@@ -40,81 +39,24 @@
   </style>
 </head>
 
-<body class="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
+<body class="relative min-h-screen flex flex-col overflow-x-hidden">
   <!-- Circuit Background -->
   <div class="circuit-container"></div>
 
-  <!-- Floating Navigation Panel -->
+  <!-- Main Content -->
   <nav class="fixed top-5 left-1/2 w-11/12 max-w-5xl transform -translate-x-1/2 bg-gray-800 rounded-lg shadow-lg z-50">
-    <div class="container mx-auto px-4">
-      <div class="flex items-center justify-between py-4">
-        <div class="flex items-center">
-          <a href="#" class="text-2xl font-mono font-bold text-white">Shreya Gupta</a>
-        </div>
-
-        <div class="lg:hidden">
-          <button id="nav-toggle" class="text-white focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
-        </div>
-
-        <div class="hidden lg:flex space-x-8">
-          <a href="index.html" class="text-white font-mono hover:bg-gray-700 px-3 py-2 rounded-md transition duration-300">Home</a>
-          <a href="Blogs.html" class="text-white font-mono hover:bg-gray-700 px-3 py-2 rounded-md transition duration-300">Blogs</a>
-          <a href="Publications.html" class="text-white font-mono hover:bg-gray-700 px-3 py-2 rounded-md transition duration-300">Publications</a>
-          <a href="https://drive.google.com/file/d/1PLBG_PGdlWSivdNjjPvqXByO9CwAeEpP/view" class="text-white font-mono hover:bg-gray-700 px-3 py-2 rounded-md transition duration-300">CV</a>
-        </div>
-      </div>
-
-      <div id="mobile-menu" class="lg:hidden hidden py-4 rounded-b-lg">
-        <a href="index.html" class="block py-2 text-white hover:bg-gray-700 px-3 rounded-md transition duration-300">Home</a>
-        <a href="Blogs.html" class="block py-2 text-white hover:bg-gray-700 px-3 rounded-md transition duration-300">Blogs</a>
-        <a href="Publications.html" class="block py-2 text-white hover:bg-gray-700 px-3 rounded-md transition duration-300">Publications</a>
-        <a href="https://drive.google.com/file/d/1PLBG_PGdlWSivdNjjPvqXByO9CwAeEpP/view" class="block py-2 text-white hover:bg-gray-700 px-3 rounded-md transition duration-300">CV</a>
-      </div>
-    </div>
+    <!-- Navigation content -->
   </nav>
 
   <main class="container flex flex-col items-center justify-center font-mono mx-auto px-4 pt-32 pb-12">
-    <h1 class="text-4xl font-bold mb-8">Blogs</h1>
-
-    <!-- Blog Cards -->
-    <div class="bg-white w-full lg:w-7/12 dark:bg-gray-700 text-black dark:text-white rounded-xl shadow-sm p-6 mb-8 min-h-[200px]">
-      <h2 class="text-2xl font-bold mb-2">Google Women Techmakers Experience 2019</h2>
-      <a href="Blog1.html" class="text-blue-500 hover:underline font-bold">Show more</a>
-    </div>
-
-    <div class="bg-white w-full lg:w-7/12 dark:bg-gray-700 text-black dark:text-white rounded-xl shadow-sm p-6 mb-8 min-h-[200px]">
-      <h2 class="text-2xl font-bold mb-2">RIPS at IPAM, UCLA - Application and Pre-Intern Experience 2019</h2>
-      <a href="Blog2.html" class="text-blue-500 hover:underline font-bold">Show more</a>
-    </div>
-
-    <div class="bg-white w-full lg:w-7/12 dark:bg-gray-700 text-black dark:text-white rounded-xl shadow-sm p-6 mb-8 min-h-[200px]">
-      <h2 class="text-2xl font-bold mb-2">Travelling Respite</h2>
-      <a href="Blog3.html" class="text-blue-500 hover:underline font-bold">Show more</a>
-    </div>
+    <!-- Blog entries and main content -->
   </main>
 
-  <footer class="bg-gray-800 py-12 text-center text-white">
-    <h3 class="text-4xl font-mono font-bold mb-4">Shreya Gupta</h3>
-    <a href="mailto:shreyagupta0806@gmail.com" class="inline-block mb-6">
-      <button class="px-6 py-3 bg-gray-700 rounded-lg hover:bg-gray-600 transition duration-300">Email Me</button>
-    </a>
-    <p>&copy; 2024 Shreya Gupta. All Rights Reserved.</p>
+  <footer class="bg-gray-800 py-12 px-4 text-center">
+    <!-- Footer content -->
   </footer>
 
-  <!-- JavaScript -->
   <script>
-    const navToggle = document.getElementById('nav-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    navToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-
-    // Circuit animation
     const container = document.querySelector('.circuit-container');
     const lineCount = 20;
 
@@ -134,6 +76,11 @@
 
       container.appendChild(line);
     }
+
+    setInterval(() => {
+      const lines = document.querySelectorAll('.circuit-line');
+      lines[Math.floor(Math.random() * lines.length)].style.opacity = 1;
+    }, 200);
   </script>
 </body>
 </html>
