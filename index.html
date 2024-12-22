@@ -3,43 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Circuit Board</title>
+    <title>Startup Founder Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-            background-color: #000;
-            color: #fff;
-            font-family: Arial, sans-serif;
-        }
         .circuit-container {
             position: absolute;
             inset: 0;
             background-color: #000;
-            z-index: -1;
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            z-index: 0;
         }
         .circuit-line {
             position: absolute;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 2px;
-            animation: pulse 3s infinite ease-in-out;
+            background-color: #fff;
+            opacity: 0;
+            transition: opacity 0.5s;
         }
         @keyframes pulse {
-            0%, 100% {
-                opacity: 0.1;
-                transform: scale(1);
-            }
-            50% {
-                opacity: 1;
-                transform: scale(1.05);
-            }
+            0%, 100% { opacity: 0.1; }
+            50% { opacity: 0.5; }
         }
     </style>
 </head>
-<body>
-    <div class="circuit-container"></div>
-    
+<body class="text-white bg-black">
+    <!-- Navbar -->
+    <nav class="w-full p-4 bg-black bg-opacity-80 fixed top-0 z-10">
+        <ul class="flex justify-center space-x-8 text-gray-300">
+            <li><a href="#about" class="hover:text-gray-100">About</a></li>
+            <li><a href="#circuit" class="hover:text-gray-100">Circuit</a></li>
+            <li><a href="#contact" class="hover:text-gray-100">Contact</a></li>
+        </ul>
+    </nav>
+<section id="circuit" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Circuit Background -->
+        <div class="circuit-container"></div>
+        <div class="z-10 text-center max-w-3xl">
+            <h2 class="text-5xl font-bold text-white">Innovative Circuitry</h2>
+            <p class="mt-4 text-lg text-gray-300">A representation of innovation, precision, and the startup mindset.</p>
+        </div>
+</section>
+
+    <section id="circuit" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Circuit Background -->
+        <div class="circuit-container"></div>
+        <div class="z-10 p-6 max-w-3xl">
+            <h1 class="text-4xl font-bold mb-6">About Me</h1>
+
+        <h2 class="text-1xl font-mono font-bold mb-6">
+
+            Hi, I'm Subhadeep Paul from Assam, India. As a student pursuing my high school diploma, I’m passionate about learning and sharing knowledge because I believe it’s the key to growth. My goal is to dedicate my time and energy to making a positive impact, helping our modern, ever-evolving world move forward.<br><br>
+
+            I love diving into the craziest and most creative ideas that pop into my head, and I’m dead set on making them a reality someday. I’m also all about chasing fresh ideas and meeting amazing people along the way. My big dream? To guide myself—and maybe the whole world—towards a brighter, happier future.
+
+        </h2>
+        </div>
+    </section>
+
+    <section id="circuit" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Circuit Background -->
+        <div class="circuit-container"></div>
+        <div class="z-10 text-center max-w-3xl">
+            
+        
+        <h1 class="text-4xl font-bold mb-6">Modes</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300">
+
+                <div class="flex items-center justify-between mb-4">
+
+                    <span class="font-medium text-white">Founder</span>
+
+                    <div class="flex items-center space-x-2">
+
+                        <div class="relative w-12 h-6 bg-primary rounded-full cursor-pointer transition-colors duration-300 ease-in-out">
+
+                            <div class="absolute left-6 top-0.5 bg-white w-5 h-5 rounded-full shadow"></div>
+
+                        </div>
+
+                        <span class="font-medium text-white">On</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300">
+
+                <div class="flex items-center justify-between mb-4">
+
+                    <span class="font-medium text-white">Developer</span>
+
+                    <div class="flex items-center space-x-2">
+
+                        <div class="relative w-12 h-6 bg-primary rounded-full cursor-pointer transition-colors duration-300 ease-in-out">
+
+                            <div class="absolute left-6 top-0.5 bg-white w-5 h-5 rounded-full shadow"></div>
+
+                        </div>
+
+                        <span class="font-medium text-white">On</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300">
+
+                <div class="flex items-center justify-between mb-4">
+
+                    <span class="font-medium text-white">Entrepreneur</span>
+
+                    <div class="flex items-center space-x-2">
+
+                        <div class="relative w-12 h-6 bg-primary rounded-full cursor-pointer transition-colors duration-300 ease-in-out">
+
                             <div class="absolute left-6 top-0.5 bg-white w-5 h-5 rounded-full shadow"></div>
 
                         </div>
@@ -75,31 +161,48 @@
             </div>
 
         </div>
+        </div>
+    </section>
+   
 
-</main>
+    <!-- Circuit Section -->
+    <section id="circuit" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Circuit Background -->
+        <div class="circuit-container"></div>
+        <div class="z-10 text-center max-w-3xl">
+            <h2 class="text-5xl font-bold text-white">Innovative Circuitry</h2>
+            <p class="mt-4 text-lg text-gray-300">A representation of innovation, precision, and the startup mindset.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    
 
     <script>
         const container = document.querySelector('.circuit-container');
-        const lineCount = 50;
+        const lineCount = 20;
 
         for (let i = 0; i < lineCount; i++) {
             const line = document.createElement('div');
             line.classList.add('circuit-line');
-
+            
             const isHorizontal = Math.random() > 0.5;
-            const length = Math.random() * 150 + 50; // Length of the line
-            const thickness = Math.random() * 4 + 1; // Thickness of the line
-
+            const length = Math.random() * 100 + 50;
+            const thickness = Math.random() * 2 + 1;
+            
             line.style.width = isHorizontal ? `${length}px` : `${thickness}px`;
             line.style.height = isHorizontal ? `${thickness}px` : `${length}px`;
             line.style.left = `${Math.random() * 100}%`;
             line.style.top = `${Math.random() * 100}%`;
-
-            line.style.animationDuration = `${Math.random() * 4 + 2}s`; // Random animation duration
-            line.style.animationDelay = `${Math.random() * 2}s`; // Random animation delay
-
+            line.style.animation = `pulse ${Math.random() * 3 + 2}s infinite`;
+            
             container.appendChild(line);
         }
+
+        setInterval(() => {
+            const lines = document.querySelectorAll('.circuit-line');
+            lines[Math.floor(Math.random() * lines.length)].style.opacity = 1;
+        }, 200);
     </script>
 </body>
 </html>
