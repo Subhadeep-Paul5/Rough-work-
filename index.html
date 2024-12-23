@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Startup Founder Portfolio</title>
+    <title>Circuit Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .circuit-container {
-            position: absolute;
-            inset: 0;
             background-color: #000;
             background-image: 
                 linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
             background-size: 20px 20px;
-            z-index: 0;
+            position: relative;
         }
         .circuit-line {
             position: absolute;
@@ -28,215 +26,47 @@
         }
     </style>
 </head>
-<body class="text-white bg-black">
-    <!-- Navbar -->
-    <nav class="fixed top-5 left-1/2 w-11/12 max-w-5xl transform -translate-x-1/2 bg-gray-800 rounded-lg shadow-lg z-50">
-     <div class="container mx-auto px-4">
-       <div class="flex items-center justify-between py-4">
-         <!-- Logo and Title Container -->
-         <div class="flex items-center">
-           <a href="#" class="text-2xl font-mono font-bold text-white">Subhadeep Paul</a>
-         </div>
-
-         <!-- Mobile menu button -->
-         <div class="lg:hidden">
-           <button id="nav-toggle" class="text-white focus:outline-none">
-             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-             </svg>
-           </button>
-         </div>
-
-         <!-- Nav Links -->
-         <div class="hidden lg:flex space-x-8">
-           <a href="index.html" class="text-white font-mono hover:bg-gray-700 px-3 py-2 rounded-md transition duration-300">Home</a>
-           <a href="Blogs.html" class="text-white font-mono hover:bg-gray-700 px-3 py-2 rounded-md transition duration-300">Blogs</a>
-           <a href="Publications.html" class="text-white font-mono hover:bg-gray-700 px-3 py-2 rounded-md transition duration-300">Publications</a>
-           <a href="https://drive.google.com/file/d/1PLBG_PGdlWSivdNjjPvqXByO9CwAeEpP/view?usp=share_link&authuser=0" class="text-white font-mono hover:bg-gray-700 px-3 py-2 rounded-md transition duration-300 w-full block">CV</a>
-         </div>
-       </div>
-
-       <!-- Mobile Menu -->
-       <div id="mobile-menu" class="lg:hidden hidden py-4 rounded-b-lg">
-         <a href="index.html" class="block py-2 text-white hover:bg-gray-700 px-3 rounded-md transition duration-300">Home</a>
-         <a href="Blogs.html" class="block py-2 text-white hover:bg-gray-700 px-3 rounded-md transition duration-300">Blogs</a>
-         <a href="Publications.html" class="block py-2 text-white hover:bg-gray-700 px-3 rounded-md transition duration-300">Publications</a>
-         <a href="https://drive.google.com/file/d/1PLBG_PGdlWSivdNjjPvqXByO9CwAeEpP/view?usp=share_link&authuser=0" class="text-white font-mono hover:bg-gray-700 px-3 py-2 rounded-md transition duration-300 w-full block">CV</a>
-       </div>
-     </div>
-    </nav>
-<section id="circuit" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <!-- Circuit Background -->
-        <div class="circuit-container"></div>
-        <div class="z-10 p-6 max-w-3xl">
-
-            <h1 class="text-4xl font-bold align-left">Blogs<br><br></h1>
-  
-     
-     <div class="bg-white w-full lg:w-7/12 dark:bg-gray-700 text-black dark:text-white rounded-xl shadow-sm p-6 mb-8 min-h-[200px]">
-       <div class="mb-4">              
-         <h2 class="text-2xl font-bold mb-2">
-            Google Women Techmakers Experience 2019
-         </h2>  
-         <a href="Blog1.html" class="text-blue-500 hover:underline">
-          <span class="text-blue-500 font-bold">Show more</span>
-         </a>      
-       </div>      
-     </div>
-
-     <div class="bg-white w-full lg:w-7/12 dark:bg-gray-700 text-black dark:text-white rounded-xl shadow-sm p-6 mb-8 min-h-[200px]">
-      <div class="mb-4">              
-        <h2 class="text-2xl font-bold mb-2">
-            RIPS at IPAM, UCLA - Application and Pre-Intern Experience 2019
-        </h2>  
-        <a href="Blog2.html" class="text-blue-500 hover:underline">
-         <span class="text-blue-500 font-bold">Show more</span>
-        </a>      
-      </div>      
-    </div>
-
-   <div class="bg-white w-full lg:w-7/12 dark:bg-gray-700 text-black dark:text-white rounded-xl shadow-sm p-6 mb-8 min-h-[200px]">
-      <div class="mb-4">              
-        <h2 class="text-2xl font-bold mb-2">
-            Travelling Respite
-        </h2>  
-        <a href="Blog3.html" class="text-blue-500 hover:underline">
-         <span class="text-blue-500 font-bold">Show more</span>
-        </a>      
-      </div>      
-   </div>
-            
-</section>
-
-    <section id="circuit" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <!-- Circuit Background -->
-        <div class="circuit-container"></div>
-        <div class="z-10 p-6 max-w-3xl">
-            <h1 class="text-4xl font-bold mb-6">About Me</h1>
-
-        <h2 class="text-1xl font-mono font-bold mb-6">
-
-            Hi, I'm Subhadeep Paul from Assam, India. As a student pursuing my high school diploma, I’m passionate about learning and sharing knowledge because I believe it’s the key to growth. My goal is to dedicate my time and energy to making a positive impact, helping our modern, ever-evolving world move forward.<br><br>
-
-            I love diving into the craziest and most creative ideas that pop into my head, and I’m dead set on making them a reality someday. I’m also all about chasing fresh ideas and meeting amazing people along the way. My big dream? To guide myself—and maybe the whole world—towards a brighter, happier future.
-
-        </h2>
-        </div>
-    </section>
-
-    <section id="circuit" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <!-- Circuit Background -->
-        <div class="circuit-container"></div>
-        <div class="z-10 text-center max-w-3xl">
-            
-        
-        <h1 class="text-4xl font-bold mb-6">Modes</h1>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-            <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300">
-
-                <div class="flex items-center justify-between mb-4">
-
-                    <span class="font-medium text-white">Founder</span>
-
-                    <div class="flex items-center space-x-2">
-
-                        <div class="relative w-12 h-6 bg-primary rounded-full cursor-pointer transition-colors duration-300 ease-in-out">
-
-                            <div class="absolute left-6 top-0.5 bg-white w-5 h-5 rounded-full shadow"></div>
-
-                        </div>
-
-                        <span class="font-medium text-white">On</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300">
-
-                <div class="flex items-center justify-between mb-4">
-
-                    <span class="font-medium text-white">Developer</span>
-
-                    <div class="flex items-center space-x-2">
-
-                        <div class="relative w-12 h-6 bg-primary rounded-full cursor-pointer transition-colors duration-300 ease-in-out">
-
-                            <div class="absolute left-6 top-0.5 bg-white w-5 h-5 rounded-full shadow"></div>
-
-                        </div>
-
-                        <span class="font-medium text-white">On</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300">
-
-                <div class="flex items-center justify-between mb-4">
-
-                    <span class="font-medium text-white">Entrepreneur</span>
-
-                    <div class="flex items-center space-x-2">
-
-                        <div class="relative w-12 h-6 bg-primary rounded-full cursor-pointer transition-colors duration-300 ease-in-out">
-
-                            <div class="absolute left-6 top-0.5 bg-white w-5 h-5 rounded-full shadow"></div>
-
-                        </div>
-
-                        <span class="font-medium text-white">On</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300">
-
-                <div class="flex items-center justify-between mb-4">
-
-                    <span class="font-medium text-white">Laziness</span>
-
-                    <div class="flex items-center space-x-2">
-
-                        <div class="relative w-12 h-6 bg-gray-600 rounded-full cursor-pointer transition-colors duration-300 ease-in-out">
-
-                            <div class="absolute left-1 top-0.5 bg-white w-5 h-5 rounded-full shadow"></div>
-
-                        </div>
-
-                        <span class="font-medium text-white">Off</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-        </div>
-    </section>
-   
-
-    <!-- Contact Section -->
-    <script>
-    const navToggle = document.getElementById('nav-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    navToggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
-    </script>
+<body class="bg-black text-white min-h-screen">
+    <div class="circuit-container fixed inset-0"></div>
     
+    <div class="relative z-10">
+        <header class="py-6 px-4 sm:px-6 lg:px-8">
+            <nav class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold">Circuit Blog</a>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="#" class="hover:text-gray-300">About</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <h1 class="text-4xl font-bold mb-8">Welcome to Circuit Blog</h1>
+            
+            <article class="mb-12">
+                <h2 class="text-2xl font-semibold mb-4">The Future of Technology: Quantum Computing</h2>
+                <p class="mb-4">Quantum computing is poised to revolutionize the tech industry. With its ability to perform complex calculations at unprecedented speeds, it promises to solve problems that are currently intractable for classical computers.</p>
+                <a href="#" class="text-gray-300 hover:text-white underline">Read more</a>
+            </article>
+
+            <article class="mb-12">
+                <h2 class="text-2xl font-semibold mb-4">AI Ethics: Navigating the Digital Moral Landscape</h2>
+                <p class="mb-4">As AI becomes increasingly integrated into our daily lives, we must grapple with complex ethical questions. How do we ensure AI systems are fair, transparent, and accountable?</p>
+                <a href="#" class="text-gray-300 hover:text-white underline">Read more</a>
+            </article>
+
+            <article class="mb-12">
+                <h2 class="text-2xl font-semibold mb-4">The Rise of Edge Computing</h2>
+                <p class="mb-4">Edge computing is changing the game for IoT devices and real-time applications. By processing data closer to where it's generated, edge computing reduces latency and improves efficiency.</p>
+                <a href="#" class="text-gray-300 hover:text-white underline">Read more</a>
+            </article>
+        </main>
+
+        <footer class="py-6 px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2023 Circuit Blog. All rights reserved.</p>
+        </footer>
+    </div>
 
     <script>
         const container = document.querySelector('.circuit-container');
@@ -265,4 +95,4 @@
         }, 200);
     </script>
 </body>
-  </html>
+</html>
